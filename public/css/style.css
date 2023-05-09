@@ -65,7 +65,7 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 10%;
+    height: 75px;
 }
 
     /*--MAIN--*/
@@ -92,7 +92,7 @@ main{
       grid-template-columns:  10px  1fr 1fr 1fr 1fr 1fr 10px;
       grid-template-rows: auto;
       grid-template-areas: 
-      ". . . h2 . . ."
+      ". . h2 h2 h2 . ."
       ". primary primary  primary  primary primary ."
       ". . leftArrow centerB rightArrow . .";
   }
