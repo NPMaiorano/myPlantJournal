@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myPlantJournal</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="" alt="login-Symbol">
+        <h2>myPlantJournal</h2>
+        <ul>
+            <li>
+                <a href="">addPlant</a>
+            </li>
+            <li>
+                <a href="">myGardens</a>
+            </li>
+            <li>
+                <a href="/logout">Logout</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="primaryGarden">
+            <h1 class="primaryH2">Primary Garden</h1>
+            <article></article>
+            
+                <button class="leftArrow threeButton"><span class="arrow lArrow"></span></button>
+                <button class="centerB threeButton"><span class="circle"></span></button>
+                <button class="rightArrow threeButton"><span class="arrow rArrow"></span></button>
+            
+        </section>
+
+        <section class="choreList">
+            <h1 class="center chores">Chore List</h1>
+            <h2 class="center username"><%= user.userName %> has <%= left %> things left to do this season</h2>
+            <form class="center" action="/todos/createTodo" method='POST'>
+                <input type="text" placeholder="Enter Todo Item" name='todoItem'>
+                <input type="submit">
+            </form>
+            <ul class="choresUl">
+                <% todos.forEach( el => { %>
+                <li class='todoItem <%= el.completed === true ? 'completed' : 'not'%>' data-id='<%=el._id%>'>
+                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                <span class='del'> Delete </span>
+                </li>
+                <% }) %>    
+            </ul>
+
+        
+
+        
+        </section>
+        
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

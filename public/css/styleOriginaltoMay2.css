@@ -1,0 +1,83 @@
+/*--BODY--*/
+body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/*--HEADER--*/
+header{
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*--MAIN--*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+main > section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+main > section h1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* CHORE LIST*/
+main > section ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+h2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+li{
+    padding: 1%;
+    list-style-type: square;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+span{
+    padding: 1%;
+}
+
+h1{
+    color: blue;
+}
+.completed{
+    background-color: red;
+    color: gray;
+   
+}
+.not{
+    background-color: green;
+    display: flex;
+   
+}
+.del{
+    background-color: orange;
+}
+/*body {
+    display: grid;
+    width: 1000px;
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
+  fiddle with this*/
