@@ -143,7 +143,13 @@ main{
       }
       .gridOL li{
         border: 1px solid black;
-        color: rgb(189, 122, 67);;
+        color: rgb(0, 122, 67);
+      }
+      .gridLetters{
+        background-color: lightgreen;
+      }
+      .gridNums{
+        background-color: lightblue;
       }
       .grid{
         margin-left: 15px;
