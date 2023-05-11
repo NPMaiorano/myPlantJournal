@@ -143,6 +143,7 @@ main{
       }
       .gridOL li{
         border: 1px solid black;
+        color: rgb(189, 122, 67);;
       }
       .grid{
         margin-left: 15px;
