@@ -127,6 +127,26 @@ main{
         height: 400px;
         background-color: rgb(255, 197, 126);
       }
+      .mapGrid{
+        border: 3px solid brown;
+        background-color: rgb(189, 122, 67);
+        margin: 30px 10px 10px 10px;
+        height: 266px;
+      }
+      .gridOL{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: grid;    
+        grid-template-columns: repeat(10, 1fr);
+      }
+      .gridOL li{
+        border: 1px solid black;
+      }
+      .grid{
+        margin-left: 15px;
+      }
     
           /* buttons */
     .threeButton{
