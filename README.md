@@ -2,7 +2,8 @@
 
 A mobile first full stack web application to help you keep track of your plants to stay organized, keep plants healthy, and increase crop yield. 
 
----
+---![Uploading myPlanPic.JPG…]()
+
 
 # Objectives
 
