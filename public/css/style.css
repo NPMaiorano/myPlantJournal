@@ -67,6 +67,9 @@ header{
     align-items: center;
     height: 75px;
 }
+.login{
+  content: "🤷‍♀️";
+}
 
     /*--MAIN--*/
 main{
@@ -76,30 +79,55 @@ main{
     justify-items: center;
 }
         /* Primary Garden*/
-    article{
+        .primaryGarden{
+          margin-top: 10px;
+          display: grid;
+          grid-template-columns:  10px  1fr 1fr 1fr 1fr 1fr 10px;
+          grid-template-rows: auto;
+          grid-template-areas: 
+          ". . h2 h2 h2 . ."
+          ". primary primary  primary  primary primary ."
+          ". . leftArrow centerB rightArrow . .";
+      }
+      .primaryH2{
+          grid-area: h2;
+          justify-self: center;
+      }
+    .journal{
         display: flex;
         justify-self: center;
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-items: center;
         background-color: green;
         width: 100%;
-        height: 300px;
+        height: 400px;
         grid-area: primary;
+        margin-bottom: 5px;
     }
-    .primaryGarden{
-      margin-top: 10px;
-      display: grid;
-      grid-template-columns:  10px  1fr 1fr 1fr 1fr 1fr 10px;
-      grid-template-rows: auto;
-      grid-template-areas: 
-      ". . h2 h2 h2 . ."
-      ". primary primary  primary  primary primary ."
-      ". . leftArrow centerB rightArrow . .";
-  }
-  .primaryH2{
-      grid-area: h2;
-      justify-self: center;
-  }
+      /* information*/
+    .infoDisplay{
+      width: 48%;
+      height: 400px;
+      background-color: bisque;
+      margin-left: 2%;
+      display: flex;
+      flex-direction: column;
+    }
+    .infoItem{
+      margin-left: 5px;
+    }
+    .photoAlbum{
+      align-self:last baseline;
+      margin-top:  5px;
+      margin-right: 50%;
+    }
+      /* Mini Map*/
+      .miniMap{
+        width: 48%;
+        height: 400px;
+        background-color: rgb(255, 197, 126);
+      }
+    
           /* buttons */
     .threeButton{
       height: 35px;
@@ -116,7 +144,6 @@ main{
     }
     .circle{
       display:inline-block;
-      
       background: black;
       border-radius: 50%;
       height: 26px;
@@ -140,14 +167,14 @@ main{
     /*  CHORE LIST  */
     .choreList{
         margin-top: 10px;
-        display: grid;
-        grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 10px;
+        display: grid;    
+       grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 10px;
         grid-template-rows: auto;
         grid-template-areas: 
             ". chores chores chores chores chores ."
             ". . h2 h2 h2 . ."
             ". . form form form . ."
-            ". ul ul ul ul ul .";
+            ". ul ul ul ul ul ."; 
     }
     .choresUl{
       padding-right: 40px;
@@ -157,7 +184,7 @@ main{
     }
     .username{
         grid-area: h2;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
         form{
             padding: 1%;
@@ -177,28 +204,34 @@ main{
         li{
             list-style: none;
         }
-
-        
         h1{
             color: blue;
         }
         .completed{
-            background-color: green;
-            float: left;
-            width: 50%;
-           height: 25%;
+          background-color: rgb(65, 133, 65);
+          height: 25%;
+          display: flex;
+          align-self: center;
+          padding-left: 25px;
         }
         .not{
-            background-color: red;  
-            float: right;
-            width: 50%;
+            background-color: rgb(236, 198, 72);  
             height: 25%;
+            display: flex;
+            align-self: center;
+            padding-left: 25px;
         }
         .del{
-            background-color: orange;
-            justify-self: flex-end;
+            background-color: rgb(231, 69, 69);
+            display: flex;
+            justify-self: space-around;
+            width: 100px;
+            align-items: center;
+            padding-left: 20px;
         }
         .todoItem{
             display: flex;
             justify-content: space-between;
+            justify-items: center;
+            font-size: 1.5em;
         }
