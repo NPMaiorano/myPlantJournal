@@ -50,9 +50,9 @@ bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mon
     - local storage 
           (phone: make file transfer to pc easy so use can swtih between mobile and desktop after uploading folder to pc from phone)
 
-  - add tailwind or bootsrap to make look a little fancier
-  - add api for wheather?
-  - add API for plant info?
+- add tailwind or bootsrap to make look a little fancier
+- add api for wheather?
+- add API for plant info?
     - include growing zone option?
  ---
  
