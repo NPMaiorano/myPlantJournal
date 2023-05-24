@@ -73,6 +73,7 @@ header{
           /*-- NAV--*/
           #toClick:hover{
 color: rgb(201, 255, 121);
+cursor: pointer;
           }
 .fa-burger{
   padding: 0;
@@ -98,7 +99,7 @@ color: rgb(201, 255, 121);
 }
 #ham li a:hover{
   color: lightblue;
-  
+  cursor: pointer;
 }
 /*-- -- MAIN -- --*/
 main{
@@ -191,6 +192,7 @@ main{
     }
     .threeButton:hover{
       background-color: lightgray;
+      cursor: pointer;
     }
     .threeButton:touch{
       background-color: lightgray;
