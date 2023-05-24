@@ -8,7 +8,7 @@ document.getElementById('toClick').addEventListener('click', hideBurger)
 function hideBurger() {
         x = document.getElementById('ham');
         if (x.style.display === 'none') {
-            x.style.display = 'block';
+            x.style.display = 'flex';
         } else {
             x.style.display = 'none';
         }

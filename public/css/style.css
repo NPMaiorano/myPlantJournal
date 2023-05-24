@@ -65,21 +65,41 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 75px;
+    height: 100px;
 }
 .login{
   color: rgb(49, 49, 49);
 }
           /*-- NAV--*/
+          #toClick:hover{
+color: rgb(201, 255, 121);
+          }
 .fa-burger{
   padding: 0;
 }
 #ham{
   display: none;
-  background-color: rgb(180, 180, 180);
-  border: 2px solid rgb(105, 175, 0);
+  background-color: rgb(49, 49, 49);
+  border: 3px solid rgb(214, 255, 161);
+  height: 80px;
+  align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ padding-left: 1px;
 }
 
+#ham li a{
+  color: blue;
+  font-size: 1.5rem;
+}
+#ham li a:visited{
+  color: rgb(170, 253, 35);
+  
+}
+#ham li a:hover{
+  color: lightblue;
+  
+}
 /*-- -- MAIN -- --*/
 main{
     display: flex;
@@ -96,7 +116,7 @@ main{
           grid-template-areas: 
           ". . h2 h2 h2 . ."
           ". primary primary  primary  primary primary ."
-          ". . leftArrow centerB rightArrow . .";
+          ". leftArrow backB centerB centerB rightArrow . ";
       }
       .primaryH2{
           grid-area: h2;
@@ -166,8 +186,14 @@ main{
     
           /* buttons */
     .threeButton{
-      height: 35px;
+      height: 100px;
       background-color: rgb(105, 175, 0);
+    }
+    .threeButton:hover{
+      background-color: lightgray;
+    }
+    .threeButton:touch{
+      background-color: lightgray;
     }
     .arrow {
       border: solid black;
@@ -179,13 +205,8 @@ main{
       transform: rotate(135deg);
       -webkit-transform: rotate(135deg);
     }
-    .circle{
-      display:inline-block;
-      background: black;
-      border-radius: 50%;
-      height: 26px;
-      width: 26px;
-      margin: 0;
+    .select, .back{
+      font-weight: bolder;
     }
     .rArrow{
       transform: rotate(-45deg);
@@ -193,6 +214,9 @@ main{
     }
     .leftArrow{
       grid-area: leftArrow;
+    }
+    .backB{
+      grid-area: backB;
     }
     .centerB{
       grid-area: centerB;
