@@ -55,10 +55,10 @@
 /*BODY--BODY--BODY*/
 /*BODY--BODY--BODY*/
 body{
-    background-color: rgb(92, 92, 92);  
+    background-color: rgb(49, 49, 49);  
 }
 
-    /*--HEADER--*/
+    /*--HEADER -- */
 header{
     background-color: rgb(105, 175, 0);
     display: flex;
@@ -68,10 +68,19 @@ header{
     height: 75px;
 }
 .login{
-  content: "🤷‍♀️";
+  color: rgb(49, 49, 49);
+}
+          /*-- NAV--*/
+.fa-burger{
+  padding: 0;
+}
+#ham{
+  display: none;
+  background-color: rgb(180, 180, 180);
+  border: 2px solid rgb(105, 175, 0);
 }
 
-    /*--MAIN--*/
+/*-- -- MAIN -- --*/
 main{
     display: flex;
     flex-direction: column;
@@ -213,6 +222,7 @@ main{
     .username{
         grid-area: h2;
         font-size: 1rem;
+        color: rgb(105, 175, 0);
     }
         form{
             padding: 1%;
@@ -227,7 +237,6 @@ main{
         }
         .choresUl{
             grid-area: ul;
-            
         }
         li{
             list-style: none;

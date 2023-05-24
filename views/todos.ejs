@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myPlantJournal</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src='<%= process.env.FONT %>' crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h2 class="login">Login</h2>
+        <h2 class="login"><i class="fa-solid fa-user"></i></h2>
         <h2>myPlantJournal</h2>
-        <ul>
-            <li>
-                <a href="">addPlant</a>
-            </li>
-            <li>
-                <a href="">myGardens</a>
-            </li>
-            <li>
-                <a href="/logout">Logout</a>
-            </li>
-        </ul>
+        <nav id="toClick" class="fa-solid fa-burger">
+            <ul id="ham" >
+                <li>
+                    <a href="">addPlant</a>
+                </li>
+                <li>
+                    <a href="">myGardens</a>
+                </li>
+                <li>
+                    <a href="/logout">Logout</a>
+                </li>
+            </ul>
+        </nav>
+        
     </header>
     <main>
         <section class="primaryGarden">

@@ -1,6 +1,18 @@
 const deleteBtn = document.querySelectorAll('.del')
 const todoItem = document.querySelectorAll('span.not')
 const todoComplete = document.querySelectorAll('span.completed')
+const hamburgerMenu = document.querySelector('.fa-burger')
+
+document.getElementById('toClick').addEventListener('click', hideBurger)
+
+function hideBurger() {
+        x = document.getElementById('ham');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+}
 
 Array.from(deleteBtn).forEach((el)=>{
     el.addEventListener('click', deleteTodo)
