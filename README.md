@@ -2,7 +2,8 @@
 
 A mobile first full stack web application to help you keep track of your plants to stay organized, keep plants healthy, and increase crop yield. 
 
-![mpj](https://github.com/NPMaiorano/myPlantJournal/assets/102557796/e0a1ae33-d1bc-46bb-9d09-9e80b260c8d4)
+
+![mpj](https://github.com/NPMaiorano/myPlantJournal/assets/102557796/05c6d2e6-9971-44c1-b54e-162d3e9e92c3)
 
 
 
